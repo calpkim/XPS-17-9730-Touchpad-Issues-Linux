@@ -1,7 +1,7 @@
 # XPS-17-9730-Touchpad-Issues-Linux
 ## For Dell XPS 17 9730 (2023) Debian
 Inspiration from Omo, https://gist.github.com/omo/4839c896019980d4f9d49aeff3c25929
-## THIS IS FOR WAYLAND, if you are running X, I have not confirmed whether this works on X. For a better outcome, I recommend checking out Omo's comments
+### THIS IS FOR WAYLAND, if you are running X, I have not confirmed whether this works on X. For a better outcome, I recommend checking out Omo's comments
 ## 1: Checking the Kernel
 The error is most likely caused by a `PS/2 Generic Mouse` kernel. To check, run `lsmod | grep psmouse`. If the output gives anything, that is your problem. 
 ## 2: Blacklisting Kernel
